@@ -33,7 +33,7 @@ def audio_features(audio_path, frame_rate):
 
 
 def audios_features(audios_path, save_path, frame_rate=0.01):
-	# audio_path: path ot original audios
+	# audio_path: path to audios
 	audio_names = os.listdir(audios_path)
 	features = {}
 	time.sleep(1)
