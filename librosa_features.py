@@ -1,5 +1,5 @@
 ##############################################################
-# Script name: mustard_librosa.py
+# Script name: librosa_features.py
 # Function: extract audio features by librosa
 # Author: Jiao Wenxiang
 # Date: 2019-08-02
@@ -53,10 +53,8 @@ def audios_features(audios_path, save_path, frame_rate=0.01):
 
 
 def main():
-	audios_path_c = "./MUStARD/context_final"
-	audios_features(audios_path_c, './MUStARD/context_librosa.pt')
-	audios_path_u = "./MUStARD/utterances_final"
-	audios_features(audios_path_u, './MUStARD/utterances_librosa.pt')
+	audios_path = "./Audios"
+	audios_features(audios_path, 'librosa_audio_features.pt')
 
 
 if __name__ == '__main__':
